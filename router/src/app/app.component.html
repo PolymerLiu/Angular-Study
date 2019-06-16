@@ -1,7 +1,9 @@
 <!--/表示去根路由下面找-->
 <a [routerLink]="['/']">主页</a>
 <br>
-<a [routerLink]="['/product']">商品详情页</a>
+
+<!--通过添加queryParams属性传递参数-->
+<a [routerLink]="['/product']"  [queryParams]="{id:1}">商品详情页</a>
 <br>
 <input type="button" value="商品详情页" (click)="toProductDetail()">
 <router-outlet></router-outlet>
