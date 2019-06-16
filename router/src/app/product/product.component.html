@@ -1,10 +1,12 @@
-<p>
-  这里是产品详情组件
-</p>
-
-<p>商品id是：{{productId}}</p>
-
-<div [routerLink]="['./']">商品描述</div>
-<div [routerLink]="['./seller',99]">销售员信息</div>
-<!-- 占位符，将要显示的组件就显示在下方 -->
-<router-outlet></router-outlet>
+<div class="product">
+  <p>
+    这里是产品详情组件
+  </p>
+  
+  <p>商品id是：{{productId}}</p>
+  
+  <div [routerLink]="['./']">商品描述</div>
+  <div [routerLink]="['./seller',99]">销售员信息</div>
+  <!-- 占位符，将要显示的组件就显示在下方 -->
+  <router-outlet></router-outlet>
+</div>
