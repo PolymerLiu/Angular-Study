@@ -20,7 +20,7 @@ export class ProductComponent implements OnInit {
     this.productId = this.routeInfo.snapshot.params["id"];
 
     //通过路由订阅的方式来获取参数(适用于会在同一个组件间跳转的情况)
-    this.routeInfo.params.subscribe((params: Params) => {
+    this.routeInfo.params.subscribe((params) => {
       this.productId = params["id"]
     })
   }
