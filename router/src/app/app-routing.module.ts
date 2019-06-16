@@ -7,6 +7,7 @@ import {Code404Component} from "./code404/code404.component";
 const routes: Routes = [
   {path: '' , component: HomeComponent},
   {path: 'product' , component: ProductComponent},
+  {path: 'product/:id' , component: ProductComponent},
   {path: '**' , component: Code404Component},
 ];
 
